@@ -543,7 +543,7 @@ function Index() {
               {HERO_BULLETS.map((bullet) => (
                 <li key={bullet} className="flex items-start gap-2.5">
                   <span
-                    className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-cyan shadow-[0_0_8px] shadow-brand-cyan/60"
+                    className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-cyan shadow-[0_0_6px] shadow-brand-cyan/35"
                     aria-hidden
                   />
                   {bullet}
@@ -568,10 +568,10 @@ function Index() {
 
         <Section
           id="uslugi"
+          className="services-section"
           eyebrow="Usługi"
           title="Nasze usługi"
           subtitle={SERVICES_SECTION_SUBTITLE}
-          glow={{ x: "22%", y: "58%", strength: 0.035 }}
         >
           <MobileCarousel dark items={services} renderItem={(s) => <ServiceCard s={s} index={services.indexOf(s)} />} />
           <div className="hidden md:grid grid-cols-3 gap-5">
@@ -594,7 +594,6 @@ function Index() {
         eyebrow="Opinie Google"
         title="Opinie klientów"
         subtitle="Sprawdzone recenzje z profilu Google Maps. Możesz je zweryfikować jednym kliknięciem."
-        glow={{ x: "78%", y: "36%", cyan: true }}
       >
         <GoogleReviewsSection data={googleReviews} />
       </Section>
@@ -606,7 +605,6 @@ function Index() {
         eyebrow="Portfolio"
         title="Nasze realizacje"
         subtitle={GALLERY_SECTION_SUBTITLE}
-        glow={{ x: "44%", y: "48%" }}
       >
         <GallerySection />
       </Section>
@@ -639,17 +637,12 @@ function Index() {
         id="kontakt"
         className="relative scroll-mt-24 overflow-hidden px-4 pt-10 pb-14 text-foreground md:pt-16 md:pb-20"
       >
-        <div
-          className="section-glow section-glow--cyan pointer-events-none"
-          style={{ "--glow-x": "16%", "--glow-y": "55%", "--glow-strength": "0.05" } as CSSProperties}
-          aria-hidden
-        />
         <div className="relative mx-auto max-w-6xl">
           <div id="wycena" className="scroll-mt-24">
             <div className="panel-glass rounded-2xl p-5 md:hidden">
               <Reveal className="text-center">
                 <p className="section-eyebrow">Kontakt</p>
-                <h2 className="mt-1.5 text-2xl font-bold tracking-tight text-white">Skontaktuj się z nami</h2>
+            <h2 className="mt-1.5 text-2xl font-bold tracking-tight text-white">Skontaktuj się z nami</h2>
                 <p className="mt-1.5 text-sm leading-relaxed text-white/75">Zadzwoń, napisz lub zostaw numer.</p>
               </Reveal>
 

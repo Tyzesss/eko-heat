@@ -1,4 +1,3 @@
-import type { CSSProperties } from "react";
 import { Calendar, ClipboardCheck, Phone } from "lucide-react";
 
 import { Reveal } from "@/components/Reveal";
@@ -113,11 +112,6 @@ export function HowItWorks() {
       id="jak-dzialamy"
       className="relative scroll-mt-24 overflow-hidden px-4 py-10 text-foreground md:py-16"
     >
-      <div
-        className="section-glow section-glow--cyan pointer-events-none"
-        style={{ "--glow-x": "38%", "--glow-y": "24%" } as CSSProperties}
-        aria-hidden
-      />
       <div className="relative mx-auto max-w-6xl">
         <div className="panel-glass rounded-2xl p-5 text-center md:p-8 lg:p-10">
           <Reveal>

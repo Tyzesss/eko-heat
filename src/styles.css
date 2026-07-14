@@ -53,85 +53,85 @@
 :root {
   --radius: 0.875rem;
 
-  /* Layer 0–2: dark surfaces */
-  --background: oklch(0.11 0.028 48);
-  --foreground: oklch(0.96 0.012 48);
-  --card: oklch(0.17 0.038 48);
-  --card-foreground: oklch(0.96 0.012 48);
-  --popover: oklch(0.17 0.038 48);
-  --popover-foreground: oklch(0.96 0.012 48);
-  --primary: oklch(0.55 0.15 48);
+  /* Layer 0–2: ciemne tło z ciepłym odcieniem logo */
+  --background: oklch(0.11 0.034 58);
+  --foreground: oklch(0.96 0.01 58);
+  --card: oklch(0.165 0.042 58);
+  --card-foreground: oklch(0.96 0.01 58);
+  --popover: oklch(0.165 0.042 58);
+  --popover-foreground: oklch(0.96 0.01 58);
+  --primary: oklch(0.68 0.19 58);
   --primary-foreground: oklch(0.99 0 0);
-  --secondary: oklch(0.14 0.032 48);
-  --secondary-foreground: oklch(0.92 0.02 48);
-  --muted: oklch(0.15 0.03 48);
-  --muted-foreground: oklch(0.68 0.04 48);
-  --accent: oklch(0.72 0.17 52);
-  --accent-foreground: oklch(0.11 0.028 48);
+  --secondary: oklch(0.14 0.038 58);
+  --secondary-foreground: oklch(0.92 0.015 58);
+  --muted: oklch(0.15 0.036 58);
+  --muted-foreground: oklch(0.72 0.035 58);
+  --accent: oklch(0.84 0.16 82);
+  --accent-foreground: oklch(0.11 0.034 58);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
   --border: oklch(1 0 0 / 0.12);
-  --input: oklch(0.20 0.038 48);
-  --ring: oklch(0.72 0.17 52);
+  --input: oklch(0.2 0.04 58);
+  --ring: oklch(0.72 0.19 58);
 
-  /* Brand palette — Eko-Heat (pomarańcz z logo) */
-  --brand-deep: oklch(0.09 0.03 48);
-  --brand-navy: oklch(0.16 0.045 48);
-  --brand-teal: oklch(0.52 0.15 48);
-  --brand-cyan: oklch(0.72 0.17 52);
-  --brand-ice: oklch(0.18 0.038 48);
+  /* Brand palette — Eko-Heat (pomarańcz i żółć z logo) */
+  --brand-deep: oklch(0.085 0.034 58);
+  --brand-navy: oklch(0.145 0.042 58);
+  --brand-teal: oklch(0.68 0.19 58);
+  --brand-cyan: oklch(0.84 0.16 82);
+  --brand-ice: oklch(0.18 0.04 58);
 
-  /* CTA */
-  --cta: oklch(0.62 0.19 46);
-  --cta-hover: oklch(0.58 0.19 46);
+  /* CTA — kolor tekstu logo */
+  --cta: oklch(0.68 0.2 56);
+  --cta-hover: oklch(0.63 0.2 56);
   --cta-foreground: oklch(0.99 0 0);
 
   --gradient-hero: linear-gradient(
     135deg,
-    oklch(0.09 0.03 48) 0%,
-    oklch(0.14 0.045 48) 52%,
-    oklch(0.11 0.028 48) 100%
+    oklch(0.085 0.034 58) 0%,
+    oklch(0.13 0.042 58) 52%,
+    oklch(0.11 0.034 58) 100%
   );
-  --gradient-cool: linear-gradient(180deg, oklch(0.13 0.032 48) 0%, oklch(0.11 0.028 48) 100%);
+  --gradient-cool: linear-gradient(180deg, oklch(0.14 0.038 58) 0%, oklch(0.11 0.034 58) 100%);
   --gradient-accent: linear-gradient(135deg, var(--cta), var(--brand-cyan));
-  --gradient-radial: radial-gradient(circle at 30% 20%, color-mix(in oklch, var(--cta) 18%, transparent), transparent 60%);
+  --gradient-radial: radial-gradient(circle at 30% 20%, color-mix(in oklch, var(--cta) 10%, transparent), transparent 60%);
 
   --ambient-blue: var(--brand-teal);
   --ambient-cyan: var(--brand-cyan);
 
   /* Timeline „Jak to działa” — dziedziczy po --brand-cyan przy zmianie kolorystyki */
-  --timeline-line-soft: color-mix(in oklch, var(--brand-cyan) 15%, transparent);
-  --timeline-line-mid: color-mix(in oklch, var(--brand-cyan) 40%, transparent);
-  --timeline-line-strong: color-mix(in oklch, var(--brand-cyan) 45%, transparent);
-  --timeline-glow: color-mix(in oklch, var(--brand-cyan) 28%, transparent);
+  --timeline-line-soft: color-mix(in oklch, var(--brand-cyan) 10%, transparent);
+  --timeline-line-mid: color-mix(in oklch, var(--brand-cyan) 28%, transparent);
+  --timeline-line-strong: color-mix(in oklch, var(--brand-cyan) 32%, transparent);
+  --timeline-glow: color-mix(in oklch, var(--brand-cyan) 16%, transparent);
 
   --gradient-brand: var(--gradient-accent);
 
   --shadow-cool: 0 20px 50px -20px oklch(0 0 0 / 0.55);
-  --shadow-card: 0 4px 24px -6px oklch(0 0 0 / 0.35);
-  --shadow-glow: 0 8px 32px -8px color-mix(in oklch, var(--brand-teal) 40%, transparent);
-  --shadow-cta: 0 0 14px color-mix(in oklch, var(--cta) 22%, transparent),
-    0 2px 8px color-mix(in oklch, var(--cta) 14%, transparent);
-  --shadow-cta-hover: 0 0 18px color-mix(in oklch, var(--brand-cyan) 28%, transparent),
-    0 2px 10px color-mix(in oklch, var(--cta) 16%, transparent);
-  --shadow-btn-secondary-hover: 0 0 16px color-mix(in oklch, var(--brand-cyan) 18%, transparent);
+  --shadow-card: 0 4px 24px -6px oklch(0 0 0 / 0.38);
+  --shadow-glow: 0 8px 32px -8px color-mix(in oklch, var(--brand-teal) 22%, transparent);
+  --shadow-cta: 0 0 14px color-mix(in oklch, var(--cta) 16%, transparent),
+    0 2px 8px color-mix(in oklch, var(--cta) 10%, transparent);
+  --shadow-cta-hover: 0 0 18px color-mix(in oklch, var(--brand-cyan) 18%, transparent),
+    0 2px 10px color-mix(in oklch, var(--cta) 12%, transparent);
+  --shadow-btn-secondary-hover: 0 0 16px color-mix(in oklch, var(--brand-cyan) 10%, transparent);
 
   --transition-smooth: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
   --transition-spring: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 
-  --chart-1: oklch(0.55 0.15 48);
-  --chart-2: oklch(0.72 0.17 52);
-  --chart-3: oklch(0.52 0.15 48);
-  --chart-4: oklch(0.32 0.06 48);
-  --chart-5: oklch(0.58 0.14 48);
-  --sidebar: oklch(0.12 0.03 48);
-  --sidebar-foreground: oklch(0.95 0.012 48);
-  --sidebar-primary: oklch(0.55 0.15 48);
+  --chart-1: oklch(0.68 0.19 58);
+  --chart-2: oklch(0.84 0.16 82);
+  --chart-3: oklch(0.62 0.18 58);
+  --chart-4: oklch(0.32 0.07 58);
+  --chart-5: oklch(0.58 0.16 58);
+  --sidebar: oklch(0.12 0.05 58);
+  --sidebar-foreground: oklch(0.95 0.014 58);
+  --sidebar-primary: oklch(0.68 0.19 58);
   --sidebar-primary-foreground: oklch(0.99 0 0);
-  --sidebar-accent: oklch(0.18 0.038 48);
-  --sidebar-accent-foreground: oklch(0.95 0.012 48);
+  --sidebar-accent: oklch(0.19 0.062 58);
+  --sidebar-accent-foreground: oklch(0.95 0.014 58);
   --sidebar-border: oklch(1 0 0 / 0.1);
-  --sidebar-ring: oklch(0.72 0.17 52);
+  --sidebar-ring: oklch(0.72 0.19 58);
 }
 
 @layer base {
@@ -168,6 +168,10 @@
     isolation: isolate;
   }
 
+  .services-section {
+    z-index: 2;
+  }
+
   .hero-services-bg {
     position: absolute;
     inset-inline: 0;
@@ -179,17 +183,21 @@
     -webkit-mask-image: linear-gradient(
       to bottom,
       #000 0%,
-      #000 62%,
-      rgb(0 0 0 / 0.85) 78%,
-      rgb(0 0 0 / 0.45) 90%,
+      #000 45%,
+      rgb(0 0 0 / 0.95) 58%,
+      rgb(0 0 0 / 0.78) 70%,
+      rgb(0 0 0 / 0.48) 82%,
+      rgb(0 0 0 / 0.2) 92%,
       transparent 100%
     );
     mask-image: linear-gradient(
       to bottom,
       #000 0%,
-      #000 62%,
-      rgb(0 0 0 / 0.85) 78%,
-      rgb(0 0 0 / 0.45) 90%,
+      #000 45%,
+      rgb(0 0 0 / 0.95) 58%,
+      rgb(0 0 0 / 0.78) 70%,
+      rgb(0 0 0 / 0.48) 82%,
+      rgb(0 0 0 / 0.2) 92%,
       transparent 100%
     );
   }
@@ -199,28 +207,32 @@
     inset: 0;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 20% 42%;
+    background-position: 58% 42%;
     opacity: 0.28;
     animation: hero-photo-enter 1.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     -webkit-mask-image: linear-gradient(
       to bottom,
       #000 0%,
-      #000 55%,
-      rgb(0 0 0 / 0.6) 78%,
-      transparent 96%
+      #000 42%,
+      rgb(0 0 0 / 0.88) 62%,
+      rgb(0 0 0 / 0.55) 78%,
+      rgb(0 0 0 / 0.2) 90%,
+      transparent 100%
     );
     mask-image: linear-gradient(
       to bottom,
       #000 0%,
-      #000 55%,
-      rgb(0 0 0 / 0.6) 78%,
-      transparent 96%
+      #000 42%,
+      rgb(0 0 0 / 0.88) 62%,
+      rgb(0 0 0 / 0.55) 78%,
+      rgb(0 0 0 / 0.2) 90%,
+      transparent 100%
     );
   }
 
   @media (min-width: 768px) {
     .hero-services-bg .hero-photo {
-      background-position: 14% 40%;
+      background-position: 52% 38%;
       opacity: 0.34;
     }
   }
@@ -228,15 +240,23 @@
   .hero-services-bg .hero-photo-scrim {
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-      180deg,
-      oklch(0.09 0.03 252 / 0.88) 0%,
-      oklch(0.11 0.032 252 / 0.55) 28%,
-      oklch(0.11 0.032 252 / 0.22) 48%,
-      oklch(0.11 0.032 252 / 0.42) 65%,
-      oklch(0.11 0.032 252 / 0.16) 82%,
-      transparent 100%
-    );
+    background:
+      linear-gradient(
+        180deg,
+        oklch(0.085 0.034 58 / 0.9) 0%,
+        oklch(0.11 0.034 58 / 0.58) 24%,
+        oklch(0.11 0.034 58 / 0.24) 46%,
+        oklch(0.11 0.034 58 / 0.46) 68%,
+        oklch(0.11 0.034 58 / 0.76) 84%,
+        var(--background) 100%
+      ),
+      linear-gradient(
+        90deg,
+        oklch(0.085 0.034 58 / 0.86) 0%,
+        oklch(0.11 0.034 58 / 0.5) 38%,
+        oklch(0.11 0.034 58 / 0.16) 62%,
+        transparent 78%
+      );
   }
 
   @media (min-width: 768px) {
@@ -245,18 +265,18 @@
         linear-gradient(
           180deg,
           transparent 0%,
-          oklch(0.11 0.032 252 / 0.08) 42%,
-          oklch(0.11 0.032 252 / 0.35) 68%,
-          oklch(0.11 0.032 252 / 0.12) 86%,
-          transparent 100%
+          oklch(0.11 0.034 58 / 0.05) 38%,
+          oklch(0.11 0.034 58 / 0.36) 68%,
+          oklch(0.11 0.034 58 / 0.72) 86%,
+          var(--background) 100%
         ),
         linear-gradient(
           105deg,
-          oklch(0.09 0.03 252 / 0.92) 0%,
-          oklch(0.09 0.03 252 / 0.65) 28%,
-          oklch(0.11 0.032 252 / 0.28) 50%,
-          oklch(0.11 0.032 252 / 0.1) 66%,
-          transparent 80%
+          oklch(0.085 0.034 58 / 0.92) 0%,
+          oklch(0.11 0.034 58 / 0.76) 24%,
+          oklch(0.11 0.034 58 / 0.42) 44%,
+          oklch(0.11 0.034 58 / 0.14) 58%,
+          transparent 74%
         );
     }
   }
@@ -338,21 +358,22 @@
   }
 
   .card-glass {
-    border: 1px solid oklch(1 0 0 / 0.08);
-    background: oklch(0.17 0.04 252 / 0.85);
-    backdrop-filter: blur(8px);
+    border: 1px solid oklch(1 0 0 / 0.1);
+    background: oklch(from var(--card) l c h / 0.82);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-card);
   }
 
   .panel-glass {
-    border: 1px solid oklch(1 0 0 / 0.06);
-    background: oklch(1 0 0 / 0.02);
-    backdrop-filter: blur(10px);
+    border: 1px solid oklch(1 0 0 / 0.08);
+    background: oklch(1 0 0 / 0.035);
+    backdrop-filter: blur(12px);
     box-shadow: none;
   }
 
   .panel-glass .panel-glass {
-    border-color: oklch(1 0 0 / 0.08);
-    background: oklch(1 0 0 / 0.035);
+    border-color: oklch(1 0 0 / 0.1);
+    background: oklch(1 0 0 / 0.05);
   }
 
   .btn-secondary {
@@ -392,11 +413,8 @@
     z-index: 0;
     overflow: hidden;
     background:
-      radial-gradient(ellipse 42% 34% at 14% 8%, color-mix(in oklch, var(--brand-teal) 7%, transparent), transparent 68%),
-      radial-gradient(ellipse 36% 28% at 88% 18%, color-mix(in oklch, var(--brand-cyan) 5%, transparent), transparent 65%),
-      radial-gradient(ellipse 48% 38% at 72% 58%, color-mix(in oklch, var(--brand-teal) 4.5%, transparent), transparent 70%),
-      radial-gradient(ellipse 38% 30% at 8% 72%, color-mix(in oklch, var(--brand-cyan) 4%, transparent), transparent 68%),
-      radial-gradient(ellipse 44% 32% at 52% 92%, color-mix(in oklch, var(--brand-teal) 5.5%, transparent), transparent 66%);
+      radial-gradient(ellipse 40% 32% at 12% 10%, color-mix(in oklch, var(--brand-teal) 4%, transparent), transparent 70%),
+      radial-gradient(ellipse 36% 28% at 88% 82%, color-mix(in oklch, var(--brand-cyan) 3%, transparent), transparent 68%);
   }
 
   .page-content {
@@ -409,22 +427,22 @@
     position: absolute;
     inset: 0;
     background: radial-gradient(
-      ellipse 38% 32% at var(--glow-x, 50%) var(--glow-y, 42%),
-      oklch(from var(--brand-teal) l c h / var(--glow-strength, 0.065)),
-      transparent 70%
+      ellipse 34% 28% at var(--glow-x, 50%) var(--glow-y, 42%),
+      oklch(from var(--brand-teal) l c h / var(--glow-strength, 0.022)),
+      transparent 72%
     );
   }
 
   .section-glow--cyan {
     background: radial-gradient(
-      ellipse 38% 32% at var(--glow-x, 50%) var(--glow-y, 42%),
-      oklch(from var(--brand-cyan) l c h / var(--glow-strength, 0.055)),
-      transparent 70%
+      ellipse 34% 28% at var(--glow-x, 50%) var(--glow-y, 42%),
+      oklch(from var(--brand-cyan) l c h / var(--glow-strength, 0.018)),
+      transparent 72%
     );
   }
 
   .section-glow--strong {
-    --glow-strength: 0.095;
+    --glow-strength: 0.038;
   }
 
   /* Process timeline */
